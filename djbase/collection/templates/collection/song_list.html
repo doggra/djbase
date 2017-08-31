@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+<h1>Songs</h1>
+<table id="songs" class="table">
+	<thead>
+		<tr>
+			<th>Artist(s)</th>
+			<th>Name</th>
+			<th>BPM</th>
+			<th>Genre(s)</th>
+			<th>Tags</th>
+		</tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+{% endblock content %}
+
+
+{% block extendfoot %}
+<script type="text/javascript" src="{% static 'collection/js/songs.js' %}"></script>
+{% endblock extendfoot %}

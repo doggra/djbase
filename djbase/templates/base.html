@@ -1,0 +1,39 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DJBase</title>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    {% block extendhead %}{% endblock extendhead %}
+
+</head>
+<body>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-wrapper" class="container-fluid">
+        {% block content %}{% endblock content %}
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <!-- FOOTER -->
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    {% block extendfoot %}{% endblock extendfoot %}
+
+    <!-- END FOOTER -->
+</body>
+</html>
